@@ -1,0 +1,28 @@
+<div class="contianre mt-5">
+    <div class="row">
+        <div class="col-4 offset-4 jumbotron">
+            <form [formGroup]="regiForm" (ngSubmit)="signUp()">
+                <div class="form-group">
+                    <label for="username">User Name:</label>
+                    <input type="text" formControlName='username' class="form-control" placeholder="User Name" id="username">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address:</label>
+                    <input type="email" formControlName='email'  class="form-control" placeholder="Enter email" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" formControlName='password' class="form-control" placeholder="Enter password" id="pwd">
+                </div>
+                <div class="form-group">
+                        <label for="mobi">Mobile Number:</label>
+                        <input type="number" formControlName='mobi' class="form-control" placeholder="Phone Number" id="mobi">
+                    </div>
+                <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary">submit</button>
+                </div>
+            </form>
+            <a routerLink="/login" class="float-right">SignIn</a>
+        </div>
+    </div>
+</div>
